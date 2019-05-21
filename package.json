@@ -4,7 +4,7 @@
   "description": "this will be sooooo cool",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*,js"
+    "lint": "eslint **/*.js"
   },
   "author": "",
   "license": "ISC",
