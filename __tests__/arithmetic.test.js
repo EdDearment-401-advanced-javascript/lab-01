@@ -12,8 +12,8 @@ describe('Arithmatic module', () => {
   //Adding Bad Case
   it ('it does not use strings for arithmatic.add', () => {
     let a = 'Green';
-    let b = faker.random.number();;
-  expect (arithmetic.add(a,b)).toBeNull();
+    let b = faker.random.number();
+    expect (arithmetic.add(a,b)).toBeNull();
   });
   //Adding Good Case
   it ('it uses only numbers', () => {
