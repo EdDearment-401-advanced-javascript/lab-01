@@ -9,4 +9,19 @@ describe('Greet Module', () => {
     let name = faker.name.firstName();
     expect (greet.greet(name)).toEqual(`hello ${name}`);
   });
+
+  it('it does not allow integers', () => {
+    let message = greet.greet(1);
+    expect(message).toBeNull();
+  });
+
+  it ('it does not allow arrays []', () => {
+    let message = greet.greet([]);
+    expect(message).toBeNull();
+  });
+
+  it ('it does not allow objects {}', () => {
+    let message = greet.greet({});
+    expect(message).toBeNull();
+  });
 });
